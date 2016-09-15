@@ -1,7 +1,7 @@
 {
-  "name": "react-redux-node-express",
+  "name": "React Weather",
   "version": "1.0.0",
-  "description": "Boilerplate",
+  "description": "Practice app with React/Redux",
   "main": "server/server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -10,14 +10,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/atsao/react-redux-boilerplate.git"
+    "url": "git+https://github.com/bcelestre/react-weather.git"
   },
-  "author": "Andrew Tsao",
+  "author": "Brett Celestre",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/atsao/react-redux-boilerplate/issues"
+    "url": "https://github.com/bcelestre/react-weather/issues"
   },
-  "homepage": "https://github.com/atsao/react-redux-boilerplate#readme",
+  "homepage": "https://github.com/bcelestre/react-weather#readme",
   "dependencies": {
     "axios": "^0.14.0",
     "babel-core": "^6.14.0",

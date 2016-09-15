@@ -1,6 +1,6 @@
-# React-Redux Boilerplate (WIP)
+# React Weather
 
-Boilerplate template for react-redux projects (under construction)
+Practice App with React/Redux
 
 ## Includes
 
@@ -16,5 +16,5 @@ To install dependencies:
 `npm install`
 
 Then run:
-
+ npm build
 `npm start`
