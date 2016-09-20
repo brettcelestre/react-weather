@@ -1,9 +1,8 @@
 import { combineReducers } from 'redux';
 import { routerReducer } from 'react-router-redux';
-
-import Sample from './sample';
+import WeatherReducer from './weather-reducer.js';
 
 export default combineReducers({
-  sample: Sample,
-  routing: routerReducer
+  weather: WeatherReducer,
+	routing: routerReducer
 });
