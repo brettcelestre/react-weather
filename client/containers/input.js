@@ -4,7 +4,7 @@ import { bindActionCreators } from 'redux';
 import { getWeatherData } from '../actions/index.js';
 
 
-class Login extends Component {
+class Weather extends Component {
 	// States
 	constructor(props) {
 		super(props);
@@ -13,7 +13,6 @@ class Login extends Component {
 			city: ''
 		}
 		
-
 		this.onFormSubmit = this.onFormSubmit.bind(this);
 		this.onInputChange = this.onInputChange.bind(this);
 	}
@@ -27,8 +26,9 @@ class Login extends Component {
 		event.preventDefault();
 
 		console.log('submitting:', this.state.city);
+		
+		// Invokes getWeatherData from '../actions/index.js' - imported at top
 		this.props.getWeatherData(this.state.city);
-	
 	}		 
 
  	// Render
@@ -57,4 +57,4 @@ function mapDispatchToProps(dispatch) {
 }
 //
 // Connects to state data
-export default connect(mapStateToProps, mapDispatchToProps)(Login);
+export default connect(mapStateToProps, mapDispatchToProps)(Weather);

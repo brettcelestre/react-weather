@@ -1,13 +1,38 @@
 import React, { Component } from 'react';
-import Input from '../containers/input.js';
+import Weather from '../containers/input.js';
+import { connect } from 'react-redux';
+import { bindActionCreators } from 'redux';
+import { getWeatherData } from '../actions/index.js';
 
-export default class App extends Component {
+class App extends Component {
+  
+  constructor(props) {
+    super(props);
+    
+    this.city = '';
+  }
+  
+  alertWeather() {
+    console.log('weather is: ', this.props.weather);
+  }
+  
   render() {
     return (
       <div className='wrapper'>
         <h1>React Weather</h1>
-				<Input />
+				<Weather  />
+        <button onClick={ this.alertWeather.bind(this) }>Log this.props.weather</button>
       </div>
     );
   }
 }
+
+function mapStateToProps(state) {
+ return state;
+}
+
+function mapDispatchToProps(dispatch) {
+ return bindActionCreators({ getWeatherData }, dispatch);
+}
+
+export default connect(mapStateToProps, mapDispatchToProps)(App);

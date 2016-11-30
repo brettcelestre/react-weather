@@ -1,8 +1,7 @@
 import {
   GET_WEATHER_REQUEST,
 	GET_WEATHER_SUCCESS,
-	GET_WEATHER_FAILURE
-} from '../actions';
+	GET_WEATHER_FAILURE } from '../actions';
 
 const INITIAL_STATE = [];
 
