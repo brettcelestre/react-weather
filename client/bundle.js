@@ -38597,19 +38597,10 @@
 	// Root layout
 
 	exports.default = _react2.default.createElement(
-	  _reactRouter.Router,
-	  { history: _reactRouter.browserHistory },
-	  _react2.default.createElement(_reactRouter.Route, { path: '/', component: _app2.default })
-	)
-
-	// <Router history={browserHistory}>
-	//   <Route component={ App } />
-	//     <Route path='/'>
-
-	//     </Route>
-	//   </Route>
-	// </Router>
-	;
+	  _reactRouter.Route,
+	  { path: '/' },
+	  _react2.default.createElement(_reactRouter.IndexRoute, { component: _app2.default })
+	);
 
 /***/ },
 /* 597 */
