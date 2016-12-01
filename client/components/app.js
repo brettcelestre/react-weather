@@ -16,10 +16,15 @@ class App extends Component {
     console.log('weather is: ', this.props.weather);
   }
   
+  test() {
+    alert('Home button was clicked');
+  }
+  
   render() {
     return (
       <div className='wrapper'>
         <h1>React Weather</h1>
+        <button onClick={ this.test.bind(this) }>Home</button>
 				<Weather  />
         <button onClick={ this.alertWeather.bind(this) }>Log this.props.weather</button>
       </div>

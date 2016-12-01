@@ -1,7 +1,7 @@
 {
-  "name": "React Weather",
+  "name": "react-weather",
   "version": "1.0.0",
-  "description": "Practice app with React/Redux",
+  "description": "practice app with react/redux",
   "main": "server/server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -17,7 +17,7 @@
   "bugs": {
     "url": "https://github.com/bcelestre/react-weather/issues"
   },
-  "homepage": "https://github.com/bcelestre/react-weather#readme",
+  "homepage": "http://brettcelestre.com/code/react-test/client/",
   "dependencies": {
     "axios": "^0.14.0",
     "babel-core": "^6.14.0",
